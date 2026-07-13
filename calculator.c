@@ -7,8 +7,14 @@ int main () {
     scanf("%f", &num1);
     printf("enter second number\n");
     scanf("%f", &num2);
-    printf("type + for addition and - for substraction\n");
+    printf("type '+' for addition, '-' for substraction, '*' for multiplication, '/' for division\n");
     scanf(" %c", &choice);
+     if (choice == '+'){
+        printf("result: %.2f\n", num1 + num2);
+    }
+     if (choice == '-'){
+        printf("result: %.2f\n", num1 - num2);
+    }
     if (choice == '*'){
         printf("result: %.2f\n", num1 * num2);
     }
