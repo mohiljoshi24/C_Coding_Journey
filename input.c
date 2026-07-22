@@ -14,6 +14,5 @@ int main(){
 int num;
     printf("enter number:\n");
     scanf(" %d", &num);
-
     getValidatedInput(num , 1 , 100);
 }
