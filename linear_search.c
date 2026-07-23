@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main() {
     int num1;
+    int found = 0;
 int array[2][5] = {
     {10,20,30,40,50},
     {60,70,80,90,100}
@@ -13,10 +14,17 @@ for (int i = 0; i < 2; i++){
 
         if (num1 == array[i][j]){
             printf("you guessed a right number\n the number was found in row: %d and column: %d", i,j);
+            found = 1;
+            break;
         }
-        else {printf("BAD LUCK!,\n you guessed a wrong number");}
+    } 
+    if  (found == 1){
+        break;
     }
+    
 }
-
-
+if (found== 0){
+    printf("BAD LUCK!\n you guessed the wrong number"); 
+}
+return 0;
 } 
