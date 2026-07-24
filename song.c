@@ -3,14 +3,19 @@
 
 // Handle delay function differences between Windows and Mac/Linux
 #ifdef _WIN32
+
     #include <windows.h>
     #define sleep_ms(ms) Sleep(ms)
+
 #else
+
     #include <unistd.h>
     #define sleep_ms(ms) usleep((ms) * 700)
+
 #endif
 
 int main() {
+    
     // Song lyrics broken down by lines
     const char *lyrics[] = {
        "[Intro]",
