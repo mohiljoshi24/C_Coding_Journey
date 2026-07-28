@@ -78,10 +78,3 @@ During this journey, I didn't just learn syntax—I tackled real C runtime behav
   * *Dedicated Repository:* [ATM-Machine-C]
 
 ---
-
-## 🏃 How to Run the Code Locally
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/mohiljoshi24/C_Coding_Journey.git](https://github.com/mohiljoshi24/C_Coding_Journey.git)
-   cd C_Coding_Journey
